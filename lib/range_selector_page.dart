@@ -20,9 +20,10 @@ class RangeSelectorPage extends StatelessWidget {
         onPressed: () {
           if (formKey.currentState?.validate() == true) {
             formKey.currentState?.save();
+
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => RandomizerPage(),
+                builder: (context) => const RandomizerPage(),
               ),
             );
           }
